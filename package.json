@@ -2,9 +2,12 @@
   "name": "rubicon",
   "version": "0.1.0",
   "private": true,
+  "main": "./lib/rubicon.common.js", 
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "predeploy": "vue-cli-service build --mode demo", 
+    "deploy": "gh-pages -d demo", 
+    "build": "vue-cli-service build --target lib --name rubicon src/lib.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
@@ -27,6 +30,7 @@
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^4.0.0",
     "jest": "^27.0.5",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
