@@ -1,5 +1,15 @@
 <template>
-  <h1>Скоро тут будет демо-контент!!!</h1>
+  <div class="headings">
+    <h1>Heading H1</h1>
+    <h2>Heading H2</h2>
+    <h3>Heading H3</h3>
+    <h4>Heading H4, H5 and H6</h4>
+  </div>
+  <div class="text">
+    <p>
+      Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. 
+    </p>  
+  </div>
 </template>
 
 <script lang="ts">
@@ -12,11 +22,7 @@ export default defineComponent({
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px;
 }
 </style>
