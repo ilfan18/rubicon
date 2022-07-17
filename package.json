@@ -7,8 +7,8 @@
     "build": "vue-cli-service build --target lib --name rubicon src/lib.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "predeploy": "vue-cli-service build --mode demo",
-    "deploy": "gh-pages -d demo"
+    "deploy": "gh-pages -d demo",
+    "predeploy": "vue-cli-service build --mode demo"
   },
   "main": "./lib/rubicon.common.js",
   "dependencies": {
