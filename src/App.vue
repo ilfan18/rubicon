@@ -21,6 +21,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+@import './assets/styles/app.scss';
 #app {
   text-align: center;
   margin: 60px;
