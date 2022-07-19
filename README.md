@@ -34,5 +34,3 @@ npm run predeploy
 ```
 npm run deploy
 ```
-
-test 1
