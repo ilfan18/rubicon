@@ -1,36 +1,37 @@
-# rubicon
+# Rubion
+Rubicon - библиотека компонентов для LMS [Caesar](https://github.com/ilfan18/caesar)
 
-## Project setup
+## Установка проектав
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск сервера для разработки
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Сборка для публикации на [npm](https://www.npmjs.com/)
 ```
 npm run build
 ```
 
-### Run your unit tests
+### Запуск юнит-тестов
 ```
 npm run test:unit
 ```
 
-### Lints and fixes files
+### Линтинг и исправление файлов
 ```
 npm run lint
 ```
 
-### Make ready for GithubPages deploy
+### Подготовка к публикации на Github Pages
 ```
 npm run predeploy
 ```
 
-### GithubPages deploy
+### Публикация на Github Pages
 ```
 npm run deploy
 ```
