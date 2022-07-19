@@ -10,13 +10,17 @@
       Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. 
     </p>  
   </div>
+  <div class="buttons">
+    <r-button>Default</r-button>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
+import RButton from '@/components/Button.vue';
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components:{RButton}
 });
 </script>
 
