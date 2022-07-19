@@ -10,8 +10,41 @@
       Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. 
     </p>  
   </div>
+  <h2>Default button</h2>
   <div class="buttons">
     <r-button>Default</r-button>
+    <r-button type="primery">Default</r-button>
+    <r-button type="success">Default</r-button>
+    <r-button type="warning">Default</r-button>
+    <r-button type="danger">Default</r-button>
+    <r-button type="info">Default</r-button>
+  </div>
+  <h2>Default-disabled button</h2>
+  <div class="buttons">
+    <r-button disabled>Default</r-button>
+    <r-button type="primery" disabled>Default</r-button>
+    <r-button type="success" disabled>Default</r-button>
+    <r-button type="warning" disabled>Default</r-button>
+    <r-button type="danger" disabled>Default</r-button>
+    <r-button type="info" disabled>Default</r-button>
+  </div>
+  <h2>Plain button</h2>
+  <div class="buttons">
+    <r-button plain>Default</r-button>
+    <r-button plain type="primery">Default</r-button>
+    <r-button plain type="success">Default</r-button>
+    <r-button plain type="warning">Default</r-button>
+    <r-button plain type="danger">Default</r-button>
+    <r-button plain type="info">Default</r-button>
+  </div>
+  <h2>Plain-disabled button</h2>
+  <div class="buttons">
+    <r-button plain disabled>Default</r-button>
+    <r-button plain type="primery" disabled>Default</r-button>
+    <r-button plain type="success" disabled>Default</r-button>
+    <r-button plain type="warning" disabled>Default</r-button>
+    <r-button plain type="danger" disabled>Default</r-button>
+    <r-button plain type="info" disabled>Default</r-button>
   </div>
 </template>
 
@@ -28,5 +61,10 @@ export default defineComponent({
 #app {
   text-align: center;
   margin: 60px;
+}
+.buttons {
+  .r-button {
+    margin: 0 20px;
+  }
 }
 </style>
