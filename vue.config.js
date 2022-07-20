@@ -10,16 +10,13 @@ module.exports = defineConfig({
 	css: {
 		extract: false,
 	},
-});
-
-module.exports = {
 	chainWebpack: (config) => {
 		const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
 		types.forEach((type) =>
 			addStyleResource(config.module.rule('scss').oneOf(type))
 		);
 	},
-};
+});
 
 function addStyleResource(rule) {
 	rule
