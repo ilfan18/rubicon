@@ -6,7 +6,7 @@
             'r-button--round': round,
             'r-button--plain': plain,
             },
-            buttonType
+            typeClass
         ]"
     >
         <span class="r-button__text">
@@ -32,7 +32,7 @@ export default {
         }
     },
     computed: {
-        buttonType() {
+        typeClass() {
             switch (this.type) {
                 case 'primery':
                     return 'r-button--primery'
@@ -60,18 +60,18 @@ export default {
     padding: 11px 19px;
     border: 1px solid $border-base-color;
     border-radius: 5px;
-    background-color: $basic-color-2;
-    color: $text-regular-color;
+    background-color: $base-color-2;
     transition: all 0.1s ease-in-out;
+    color: $text-regular-color;
     &:hover, &:focus, &:focus-visible {
-        border-color: $brand-sub-color-5;
-        background-color: $brand-sub-color-9;
-        color: $brand-sub-color-1;
+        border-color: $brand-color;
+        background-color: $brand-sub-color-1;
+        color: $brand-sub-color-5;
     }
     &:active {
         outline: none;
-        border-color: $brand-sub-color-2;
-        background-color: $brand-sub-color-8;
+        border-color: $brand-color;
+        background-color: $brand-sub-color-1;
         color: $brand-color;
     }
     &:focus-visible {
@@ -84,119 +84,128 @@ export default {
         font-size: 16px;
         line-height: 1;
     }
-    // Round button
-    &--round{
-        border-radius: 20px;
-    }
     // Default disabled button
     &:disabled {
         cursor: not-allowed;
         border-color: $border-extra-light-color;
-        background-color: $basic-color-2;  
+        background-color: $base-color-2;  
         color: $text-placeholder-color;
     }
     // Primery button
     &.r-button--primery {
         border-color: $brand-color;
         background-color: $brand-color;
-        color: $basic-color-2;
+        color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $brand-sub-color-2;
-            background-color: $brand-sub-color-2;
+            border-color: $brand-sub-color-5;
+            background-color: $brand-sub-color-5;
         }
         &:active{
             border-color: $brand-color;
             background-color: $brand-color;
-            color: $basic-color-2;        
+            color: $base-color-2;        
         }
         &:disabled{
-            border-color: $brand-sub-color-4;
-            background-color: $brand-sub-color-4;  
-            color: $basic-color-2;
+            border-color: $brand-sub-color-3;
+            background-color: $brand-sub-color-3;  
+            color: $base-color-2;
         }
     }
+    // Success button
     &.r-button--success {
         border-color: $success-color;
         background-color: $success-color;
-        color: $basic-color-2;
+        color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $success-sub-color-1;
-            background-color: $success-sub-color-1;
+            border-color: $success-sub-color-5;
+            background-color: $success-sub-color-5;
         }
         &:active{
             border-color: $success-color;
             background-color: $success-color;
-            color: $basic-color-2;        
+            color: $base-color-2;        
         }
         &:disabled{
-            border-color: $success-sub-color-2;
-            background-color: $success-sub-color-2;  
-            color: $basic-color-2;
+            border-color: $success-sub-color-3;
+            background-color: $success-sub-color-3;  
+            color: $base-color-2;
         }
     }
+    // Warning button
     &.r-button--warning {
         border-color: $warning-color;
         background-color: $warning-color;
-        color: $basic-color-2;
+        color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $warning-sub-color-1;
-            background-color: $warning-sub-color-1;
+            border-color: $warning-sub-color-5;
+            background-color: $warning-sub-color-5;
         }
         &:active{
             border-color: $warning-color;
             background-color: $warning-color;
-            color: $basic-color-2;        
+            color: $base-color-2;        
         }
         &:disabled{
-            border-color: $warning-sub-color-2;
-            background-color: $warning-sub-color-2;  
-            color: $basic-color-2;
+            border-color: $warning-sub-color-3;
+            background-color: $warning-sub-color-3;  
+            color: $base-color-2;
         }
     }
+    // Danger button
     &.r-button--danger {
         border-color: $danger-color;
         background-color: $danger-color;
-        color: $basic-color-2;
+        color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $danger-sub-color-1;
-            background-color: $danger-sub-color-1;
+            border-color: $danger-sub-color-5;
+            background-color: $danger-sub-color-5;
         }
         &:active{
             border-color: $danger-color;
             background-color: $danger-color;
-            color: $basic-color-2;        
+            color: $base-color-2;        
         }
         &:disabled{
-            border-color: $danger-sub-color-2;
-            background-color: $danger-sub-color-2;  
-            color: $basic-color-2;
+            border-color: $danger-sub-color-3;
+            background-color: $danger-sub-color-3;  
+            color: $base-color-2;
         }
     }
+    // Info button
     &.r-button--info {
         border-color: $info-color;
         background-color: $info-color;
-        color: $basic-color-2;
+        color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $info-sub-color-1;
-            background-color: $info-sub-color-1;
+            border-color: $info-sub-color-5;
+            background-color: $info-sub-color-5;
         }
         &:active{
             border-color: $info-color;
             background-color: $info-color;
-            color: $basic-color-2;        
+            color: $base-color-2;        
         }
         &:disabled{
-            border-color: $info-sub-color-2;
-            background-color: $info-sub-color-2;  
-            color: $basic-color-2;
+            border-color: $info-sub-color-3;
+            background-color: $info-sub-color-3;  
+            color: $base-color-2;
         }
+    }
+    // Round button
+    &--round{
+        border-radius: 20px;
+    }
+    // Circle button
+    &--circle{
+        border-radius: 50%;
     }
     // Plain button
     &.r-button--plain{
-        background-color: $basic-color-2;
+        // TODO: Проверить без этого
+        background-color: $base-color-2;
         &:hover, &:focus, &:focus-visible{
-            border-color: $brand-sub-color-5;
-            color: $brand-sub-color-1;
+            border-color: $brand-color;
+            color: $brand-sub-color-5;
         }
         &:active{
             border-color: $brand-color;
@@ -208,102 +217,102 @@ export default {
         }
         &.r-button--primery {
             border-color: $brand-color;
-            background-color: $brand-sub-color-9;
-            color: $brand-color;
+            background-color: $brand-sub-color-1;
+            color: $brand-sub-color-5;
             &:hover, &:focus, &:focus-visible{
-                border-color: $brand-sub-color-2;
-                background-color: $brand-sub-color-2;
-                color: $basic-color-2; 
+                border-color: $brand-sub-color-5;
+                background-color: $brand-sub-color-5;
+                color: $base-color-2; 
             }
             &:active{
                 border-color: $brand-color;
                 background-color: $brand-color;
-                color: $basic-color-2;        
+                color: $base-color-2;        
             }
             &:disabled{
-                border-color: $brand-sub-color-4;
-                background-color: $brand-sub-color-9;
+                border-color: $brand-sub-color-3;
+                background-color: $brand-sub-color-1;
                 color: $brand-sub-color-4;
             }
         }
         &.r-button--success {
             border-color: $success-color;
-            background-color: $success-sub-color-5;
-            color: $success-color;
+            background-color: $success-sub-color-1;
+            color: $success-sub-color-5;
             &:hover, &:focus, &:focus-visible{
-                border-color: $success-sub-color-1;
-                background-color: $success-sub-color-1;
-                color: $basic-color-2; 
+                border-color: $success-sub-color-5;
+                background-color: $success-sub-color-5;
+                color: $base-color-2; 
             }
             &:active{
                 border-color: $success-color;
                 background-color: $success-color;
-                color: $basic-color-2;        
+                color: $base-color-2;        
             }
             &:disabled{
-                border-color: $success-sub-color-2;
-                background-color: $success-sub-color-5;
-                color: $success-sub-color-2;
+                border-color: $success-sub-color-3;
+                background-color: $success-sub-color-1;
+                color: $success-sub-color-4;
             }
         }
         &.r-button--warning {
             border-color: $warning-color;
-            background-color: $warning-sub-color-5;
-            color: $warning-color;
+            background-color: $warning-sub-color-1;
+            color: $warning-sub-color-5;
             &:hover, &:focus, &:focus-visible{
-                border-color: $warning-sub-color-1;
-                background-color: $warning-sub-color-1;
-                color: $basic-color-2; 
+                border-color: $warning-sub-color-5;
+                background-color: $warning-sub-color-5;
+                color: $base-color-2; 
             }
             &:active{
                 border-color: $warning-color;
                 background-color: $warning-color;
-                color: $basic-color-2;        
+                color: $base-color-2;        
             }
             &:disabled{
-                border-color: $warning-sub-color-2;
-                background-color: $warning-sub-color-5;
-                color: $warning-sub-color-2;
+                border-color: $warning-sub-color-3;
+                background-color: $warning-sub-color-1;
+                color: $warning-sub-color-4;
             }
         }
         &.r-button--danger {
             border-color: $danger-color;
-            background-color: $danger-sub-color-5;
-            color: $danger-color;
+            background-color: $danger-sub-color-1;
+            color: $danger-sub-color-5;
             &:hover, &:focus, &:focus-visible{
-                border-color: $danger-sub-color-1;
-                background-color: $danger-sub-color-1;
-                color: $basic-color-2; 
+                border-color: $danger-sub-color-5;
+                background-color: $danger-sub-color-5;
+                color: $base-color-2; 
             }
             &:active{
                 border-color: $danger-color;
                 background-color: $danger-color;
-                color: $basic-color-2;        
+                color: $base-color-2;        
             }
             &:disabled{
-                border-color: $danger-sub-color-2;
-                background-color: $danger-sub-color-5;
-                color: $danger-sub-color-2;
+                border-color: $danger-sub-color-3;
+                background-color: $danger-sub-color-1;
+                color: $danger-sub-color-4;
             }
         }
         &.r-button--info {
             border-color: $info-color;
-            background-color: $info-sub-color-5;
-            color: $info-color;
+            background-color: $info-sub-color-1;
+            color: $info-sub-color-5;
             &:hover, &:focus, &:focus-visible{
-                border-color: $info-sub-color-1;
-                background-color: $info-sub-color-1;
-                color: $basic-color-2; 
+                border-color: $info-sub-color-5;
+                background-color: $info-sub-color-5;
+                color: $base-color-2; 
             }
             &:active{
                 border-color: $info-color;
                 background-color: $info-color;
-                color: $basic-color-2;        
+                color: $base-color-2;        
             }
             &:disabled{
-                border-color: $info-sub-color-2;
-                background-color: $info-sub-color-5;
-                color: $info-sub-color-2;
+                border-color: $info-sub-color-3;
+                background-color: $info-sub-color-1;
+                color: $info-sub-color-4;
             }
         }
     }

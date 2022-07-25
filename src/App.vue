@@ -28,6 +28,24 @@
     <r-button type="danger" disabled>Default</r-button>
     <r-button type="info" disabled>Default</r-button>
   </div>
+  <h2>Round button</h2>
+  <div class="buttons">
+    <r-button round>Default</r-button>
+    <r-button round type="primery">Default</r-button>
+    <r-button round type="success">Default</r-button>
+    <r-button round type="warning">Default</r-button>
+    <r-button round type="danger">Default</r-button>
+    <r-button round type="info">Default</r-button>
+  </div>
+  <h2>Round-disabled button</h2>
+  <div class="buttons">
+    <r-button round disabled>Default</r-button>
+    <r-button round type="primery" disabled>Default</r-button>
+    <r-button round type="success" disabled>Default</r-button>
+    <r-button round type="warning" disabled>Default</r-button>
+    <r-button round type="danger" disabled>Default</r-button>
+    <r-button round type="info" disabled>Default</r-button>
+  </div>
   <h2>Plain button</h2>
   <div class="buttons">
     <r-button plain>Default</r-button>
