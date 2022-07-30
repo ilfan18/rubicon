@@ -82,7 +82,7 @@ export default defineComponent({
 }
 .buttons {
   .r-button {
-    margin: 0 20px;
+    margin: 20px;
   }
 }
 </style>
