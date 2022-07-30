@@ -7,8 +7,13 @@
   </div>
   <div class="text">
     <p>
-      Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. Regular text with example. 
-    </p>  
+      Regular text with example. Regular text with example. Regular text with
+      example. Regular text with example. Regular text with example. Regular
+      text with example. Regular text with example. Regular text with example.
+      Regular text with example. Regular text with example. Regular text with
+      example. Regular text with example. Regular text with example. Regular
+      text with example.
+    </p>
   </div>
   <h2>Default button</h2>
   <div class="buttons">
@@ -64,14 +69,23 @@
     <r-button plain type="danger" disabled>Default</r-button>
     <r-button plain type="info" disabled>Default</r-button>
   </div>
+  <h2>Feather-icons was used for v0.0.1</h2>
+  <div class="icons">
+    <r-icon type="activity" size="50" color="#000000"></r-icon>
+    <r-icon type="airplay" size="50" color="#000000"></r-icon>
+    <r-icon type="aperture" size="50" color="#000000"></r-icon>
+    <r-icon type="box" size="50" color="#000000"></r-icon>
+    <r-icon type="cloud-rain" size="50" color="#000000"></r-icon>
+  </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 import RButton from '@/components/Button.vue';
+import RIcon from '@/components/Icon.vue';
 export default defineComponent({
   name: 'App',
-  components:{RButton}
+  components: { RButton, RIcon }
 });
 </script>
 
@@ -81,8 +95,15 @@ export default defineComponent({
   margin: 60px;
 }
 .buttons {
-  .r-button {
-    margin: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 </style>
