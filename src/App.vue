@@ -1,4 +1,7 @@
 <template>
+  <div class="logo">
+    <r-logo></r-logo>
+  </div>
   <div class="headings">
     <h1>Heading H1</h1>
     <h2>Heading H2</h2>
@@ -81,11 +84,16 @@
 
 <script>
 import { defineComponent } from 'vue';
+import RLogo from '@/components/Logo.vue';
 import RButton from '@/components/Button.vue';
 import RIcon from '@/components/Icon.vue';
 export default defineComponent({
   name: 'App',
-  components: { RButton, RIcon }
+  components: {
+    RButton,
+    RIcon,
+    RLogo
+  }
 });
 </script>
 
@@ -93,6 +101,13 @@ export default defineComponent({
 #app {
   text-align: center;
   margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 46px;
+  height: 50px;
 }
 .buttons {
   display: flex;
