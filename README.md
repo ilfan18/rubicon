@@ -1,5 +1,5 @@
 # Rubion
-Rubicon - библиотека компонентов для LMS [Caesar](https://github.com/ilfan18/caesar)
+Rubicon - библиотека компонентов на Vue
 
 ## Установка проектав
 ```
