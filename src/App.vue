@@ -1,11 +1,5 @@
+<script setup lang="ts"></script>
+
 <template></template>
 
-<script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'App'
-});
-</script>
-
-<style lang="scss"></style>
+<style scoped></style>
