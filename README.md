@@ -1,6 +1,6 @@
 # rubicon
 
-This template should help get you started developing with Vue 3 in Vite.
+Библиотека компонентов на Vue 3 
 
 ## Recommended IDE Setup
 
