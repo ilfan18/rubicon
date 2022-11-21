@@ -1,6 +1,6 @@
 :root {
     --r-bor-r-none: 0;
-    --r-bor-r-twoxsmall: 4px;
+    --r-bor-r-twoxsmall: 2px;
     --r-bor-r-xsmall: 4px;
     --r-bor-r-small: 6px;
     --r-bor-r-medium: 8px;
@@ -9,4 +9,34 @@
     --r-bor-r-twoxlarge: 24px;
     --r-bor-r-full: 9999px;
     --r-bor-r-interactive: 9999px;
+}
+.r-bor-r-none {
+    border-radius: 0;
+}
+.r-bor-r-twoxsmall {
+    border-radius: 2px;
+}
+.r-bor-r-xsmall {
+    border-radius: 4px;
+}
+.r-bor-r-small {
+    border-radius: 6px;
+}
+.r-bor-r-medium {
+    border-radius: 8px;
+}
+.r-bor-r-large {
+    border-radius: 12px;
+}
+.r-bor-r-xlarge {
+    border-radius: 16px;
+}
+.r-bor-r-twoxlarge {
+    border-radius: 24px;
+}
+.r-bor-r-full {
+    border-radius: 9999px;
+}
+.r-bor-r-interactive {
+    border-radius: 9999px;
 }
