@@ -1,5 +1,12 @@
+// Reset
 @import './reset.scss';
-@import './default.scss';
-@import './fonts.scss';
+// Fonts Declorations
+@import './fonts-declorations.scss';
+// Themes
 @import './themes/light-theme/colors.scss';
 @import './themes/dark-theme/colors.scss';
+// Tokens
+@import './tokens/#tokens.scss';
+// Default
+@import './default.scss';
+// Other
