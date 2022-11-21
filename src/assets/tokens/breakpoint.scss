@@ -1,5 +1,7 @@
-$breakpoint-small: 640px;
-$breakpoint-medium: 768px;
-$breakpoint-large: 1024px;
-$breakpoint-xlarge: 1280px;
-$breakpoint-twoxlarge: 1536px;
+:root {
+    --r-breakpoint-small: 640px;
+    --r-breakpoint-medium: 768px;
+    --r-breakpoint-large: 1024px;
+    --r-breakpoint-xlarge: 1280px;
+    --r-breakpoint-twoxlarge: 1536px;
+}

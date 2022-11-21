@@ -1,2 +1,4 @@
-$transition-slow: 0.4s ease-in-out;
-$transition-default: 0.2s ease-in-out;
+:root {
+    --r-transition-slow: 0.4s ease-in-out;
+    --r-transition-default: 0.2s ease-in-out;
+}

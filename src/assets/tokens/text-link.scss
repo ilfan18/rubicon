@@ -1,9 +1,10 @@
-$text-link-weight: 500;
-$text-link-color-rest: $piccolo;
-$text-link-color-hover: $hit;
-$text-link-color-visited: $hit;
-$text-link-underline-width-rest: 1px;
-$text-link-underline-width-hover: 2px;
-$text-link-underline-color-rest: $piccolo;
-$text-link-underline-color-hover: $hit;
-
+:root {
+    --r-text-link-weight: 500;
+    --r-text-link-color-rest: --r-piccolo;
+    --r-text-link-color-hover: --r-hit;
+    --r-text-link-color-visited: --r-hit;
+    --r-text-link-underline-width-rest: 1px;
+    --r-text-link-underline-width-hover: 2px;
+    --r-text-link-underline-color-rest: --r-piccolo;
+    --r-text-link-underline-color-hover: --r-hit;
+}

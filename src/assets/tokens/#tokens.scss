@@ -8,5 +8,7 @@
 @import './size.scss';
 @import './text-link.scss';
 
-$opacity: 0.32;
-$transform: scale(0.9);
+:root{
+    --r-opacity: 0.32;
+    --r-transform: scale(0.9);
+}

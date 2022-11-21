@@ -1,12 +1,14 @@
-$space-sixxsmall: 2px;
-$space-fivexsmall: 4px;
-$space-fourxsmall: 8px;
-$space-threexsmall: 12px;
-$space-twoxsmall: 16px;
-$space-xsmall: 24px;
-$space-small: 32px;
-$space-medium: 40px;
-$space-large: 48px;
-$space-xlarge: 56px;
-$space-twoxlarge: 64px;
-$space-threexlarge: 72px;
+:root {
+    --r-space-sixxsmall: 2px;
+    --r-space-fivexsmall: 4px;
+    --r-space-fourxsmall: 8px;
+    --r-space-threexsmall: 12px;
+    --r-space-twoxsmall: 16px;
+    --r-space-xsmall: 24px;
+    --r-space-small: 32px;
+    --r-space-medium: 40px;
+    --r-space-large: 48px;
+    --r-space-xlarge: 56px;
+    --r-space-twoxlarge: 64px;
+    --r-space-threexlarge: 72px;
+}

@@ -1,10 +1,12 @@
-$bor-r-none: 0;
-$bor-r-twoxsmall: 4px;
-$bor-r-xsmall: 4px;
-$bor-r-small: 6px;
-$bor-r-medium: 8px;
-$bor-r-large: 12px;
-$bor-r-xlarge: 16px;
-$bor-r-twoxlarge: 24px;
-$bor-r-full: 9999px;
-$bor-r-interactive: 9999px;
+:root {
+    --r-bor-r-none: 0;
+    --r-bor-r-twoxsmall: 4px;
+    --r-bor-r-xsmall: 4px;
+    --r-bor-r-small: 6px;
+    --r-bor-r-medium: 8px;
+    --r-bor-r-large: 12px;
+    --r-bor-r-xlarge: 16px;
+    --r-bor-r-twoxlarge: 24px;
+    --r-bor-r-full: 9999px;
+    --r-bor-r-interactive: 9999px;
+}
